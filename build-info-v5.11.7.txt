@@ -1,0 +1,11 @@
+PLAS WMS
+Version: 5.11.7
+Build date: 2026-08-07
+Release: AX One Row One Item
+Cache: plas-wms-v5.11.7-ax-one-row-one-item
+Package: PLASWMS-v5.11.7.zip
+
+Import rule:
+- Every valid AX source row creates one PLAS item.
+- No duplicate-looking AX row is skipped.
+- Existing records are not deleted automatically.

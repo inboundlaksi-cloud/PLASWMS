@@ -1,0 +1,22 @@
+PLAS WMS v5.11.0 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks
+PASS: HTML/local asset integrity
+PASS: 20 automated test suites via npm run check
+PASS: One pairing code per item record, including duplicate ITEM codes
+PASS: Print creates printed_pending and never auto-confirms Written
+PASS: Internal scanner accepts pairing code, item URL and item ID
+PASS: Duplicate, unknown, manual and unprinted scan guards
+PASS: Scan basket confirmation writes Applied + Written with operator/time
+PASS: Reprint reason and new pending-attachment cycle
+PASS: v2 print session/audit preservation and conservative legacy state
+PASS: External QR read-only URL preserved
+PASS: Impeccable detector clean on changed UI module
+PASS: Desktop visual QA at 1440x900
+PASS: Mobile visual QA at 390x844
+PASS: No horizontal overflow or browser console errors
+PASS: Mobile primary touch targets at least 44px
+PASS: Label workflow text size at least 12px
+
+Result: READY FOR USER ACCEPTANCE TESTING

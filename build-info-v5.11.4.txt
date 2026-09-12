@@ -1,0 +1,16 @@
+PLAS WMS
+Version: 5.11.4
+Build date: 2026-08-06
+Release: F-Zone Quota Fallback
+Cache: plas-wms-v5.11.4-fzone-quota-fallback
+Package: PLASWMS-v5.11.4.zip
+
+Deployment:
+- Deploy the complete PLAS WMS bundle so the updated client and Netlify Functions are published together.
+- No BORNEO F-Zone application update is required for this fallback.
+
+Compatibility:
+- Normal one-time ticket SSO is unchanged while the Bridge service is available.
+- Direct fallback uses the existing F-Zone portal URL and never exposes a PLAS PIN.
+- Existing map, location, point and pallet deep links are preserved.
+- PLAS-to-F-Zone TOPUP server synchronization remains unchanged.

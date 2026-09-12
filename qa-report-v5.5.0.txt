@@ -1,0 +1,14 @@
+PLAS WMS v5.5.0 — QA REPORT
+
+PASS: JavaScript syntax — topup-sticker-printer.js
+PASS: HTML duplicate ID check — no duplicate IDs
+PASS: Actual sample TFOR26003012.txt — 18 rows, TFOR26003012, 64 → 04
+PASS: Actual sample TFOR26003012.htm — 18 rows, TFOR26003012, 64 → 04
+PASS: Existing Node test suite — 10/10 test files passed
+PASS: Production dashboard integration
+PASS: Staff × quantity assignment controls
+PASS: A4 control sheet print function
+PASS: 50×25 mm sticker render integration
+PASS: Quick Hub hidden during dashboard/print modal
+
+NOTE: Tailwind rebuild was not required because this release uses the standalone topup-sticker-printer.css. The container did not include the tailwindcss CLI, so npm run build:css was not executed.

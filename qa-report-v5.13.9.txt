@@ -1,0 +1,19 @@
+PLAS WMS v5.13.9 QA REPORT
+Date: 2026-08-20
+
+RESULT: PASS
+
+- JavaScript syntax checks: PASS
+- Automated regression suites: 27/27 PASS
+- AX blank Qty Onhand + InventQty 480 => On Hand 0: PASS
+- AX Qty Onhand 0 + Quantity/InventQty 20 => On Hand 0: PASS
+- AX explicit Qty Onhand value => exact On Hand value: PASS
+- Existing AX_COPY repair policy present and batched: PASS
+- Academy startup has no automatic event listener/backfill: PASS
+- Academy event listener bounded to 500 and loaded on demand: PASS
+- F-Zone quota/network/service diagnostics: PASS
+- Existing confirm-save, receiving, print, Top Up, game bridge and supervisor regression suites: PASS
+
+Deployment note:
+Extract the ZIP and upload its CONTENTS at the Netlify site root. Do not upload the ZIP as a nested folder.
+

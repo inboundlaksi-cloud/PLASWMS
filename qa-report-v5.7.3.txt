@@ -1,0 +1,18 @@
+PLAS WMS v5.7.3 — QA REPORT
+
+Fix target:
+- Actual production TOPUP sticker renderer: topup-production-v570.js
+- Control number shifted inward from the left edge
+- Solid black badge restored
+- White sequence digits enlarged
+- Remaining content shifted right with a right safety margin
+- Browser cache/service worker bumped to v5.7.3
+
+Validation:
+- JavaScript syntax check: PASS
+- 19 automated test files: PASS
+- Actual renderer override regression: PASS
+- HTML/local asset integrity: PASS
+- TOPUP print dialog regression: PASS
+- TOPUP parser/integration/sequence tests: PASS
+- F-Zone regression suite: PASS

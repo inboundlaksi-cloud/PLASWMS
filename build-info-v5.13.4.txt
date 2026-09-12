@@ -1,0 +1,5 @@
+PLAS WMS v5.13.4
+Closed QuickHub interaction and accessibility fix
+Build date: 2026-08-10
+Deploy target: existing PLAS WMS Netlify site
+New environment variables: none

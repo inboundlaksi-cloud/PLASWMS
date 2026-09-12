@@ -1,0 +1,8 @@
+PLAS WMS v5.7.1 — TOPUP PRINT DIALOG HOTFIX
+Build date: 2026-08-04
+
+Fixes:
+- The TOPUP dashboard stays open after pressing Print stickers.
+- Print options render in a fixed overlay above the dashboard.
+- Added complete overlay/dialog styling for desktop and mobile.
+- Updated service-worker cache to v5.7.1.

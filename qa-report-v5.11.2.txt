@@ -1,0 +1,25 @@
+PLAS WMS v5.11.2 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks
+PASS: HTML/local asset integrity
+PASS: 20 automated test suites via npm run check
+PASS: Receiving records can be selected and printed
+PASS: Written records can be selected and printed
+PASS: Printing preserves Pending and Written work statuses
+PASS: Done/Received records remain outside both print tabs
+PASS: Printed and unprinted evidence remains visible on Written cards
+PASS: First print and reprint history retain operator, time and reason
+PASS: One stable pairing code per item record
+PASS: Generated inline card actions are valid and clickable
+PASS: Search field, include/exclude mode and add-filter button share one row
+PASS: Mobile quick-help copy is removed from the occupied layout
+PASS: Mobile receiving filter toolbar is reduced to one compact row
+PASS: Impeccable detector returned no warnings on changed UI modules
+PASS: Tablet visual QA at 774x1000
+PASS: Mobile visual QA at 390x844
+PASS: Label workflow visual QA at 1440x900 and 390x844
+PASS: Written selection enables both NIIMBOT/TSC and A4 controls
+PASS: No horizontal page overflow or browser console errors
+
+Result: READY FOR USER ACCEPTANCE TESTING

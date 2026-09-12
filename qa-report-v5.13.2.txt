@@ -1,0 +1,17 @@
+PLAS WMS v5.13.2 — QA Report
+Date: 2026-08-10
+
+PASS: JavaScript syntax validation
+PASS: Employee cancellation is available only for the employee's own In Progress TopUp job
+PASS: Cancellation uses the signed server action
+PASS: Firestore transaction verifies current status and job ownership
+PASS: Reserved F-Zone pallets are released before returning the job to Open
+PASS: Cancellation returns the job to Open and clears assignee/start time
+PASS: Cancellation actor, time, count and audit history are retained
+PASS: Mobile confirmation explains that the task is returned, not deleted
+PASS: Existing v5.13.1 TopUp completion and mobile scrolling fixes remain covered
+PASS: Impeccable UI detection on changed JS/CSS returned no findings
+PASS: Full npm run check regression suite
+PASS: Existing AX import, Receiving/Written print, TOPUP sticker, Academy League, PLAS Quest and Supervisor workflows
+
+Result: ready for Netlify deployment and mobile device smoke test.

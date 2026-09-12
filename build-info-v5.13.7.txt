@@ -1,0 +1,8 @@
+PLAS WMS v5.13.7
+Build: Responsive full-width desktop employee workspace
+Release date: 2026-08-10
+Service worker cache: plas-wms-v5.13.7-desktop-full-width
+
+Deploy target: Netlify production site for PLAS WMS
+Deploy method: Upload this extracted folder or ZIP through Netlify Deploys
+

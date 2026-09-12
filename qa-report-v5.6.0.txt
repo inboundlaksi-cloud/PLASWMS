@@ -1,0 +1,14 @@
+PLAS WMS v5.6.0 — QA REPORT
+Date: 2026-08-04
+
+PASS: JavaScript syntax — topup-sticker-printer.js
+PASS: Existing F-Zone bridge/security/map/layout/smoke tests
+PASS: HTML and local asset integrity test
+PASS: Existing TOPUP production and mobile workflow tests
+PASS: TXT/HTM TOPUP parser tests
+PASS: TOPUP dashboard integration test
+PASS: New matched-control sequence/grouping test
+PASS: Sticker canvas draw smoke test at 600x300 and 800x400
+PASS: Actual sample TXT — 18 rows; grouped; control codes 01–18
+
+NOTE: Full `npm run check` could not execute the Tailwind build command because the Tailwind CLI binary is not installed in this runtime. All JavaScript/integration tests were run directly and passed. No Tailwind source changes were required for this release.

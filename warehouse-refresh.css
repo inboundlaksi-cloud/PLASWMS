@@ -1,0 +1,50 @@
+/* Warehouse UI 5.15 — preserve existing application and permission flows. */
+:root{--warehouse-ink:#213852;--warehouse-line:#dbe5ef;--warehouse-sap:#234fab;--warehouse-comp:#716099}
+body{background:var(--bg-body,#f5f8fc)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #3779c9;outline-offset:3px}
+.rgb-glow,.rgb-glow-fast,.item-enter.rgb-glow,.item-enter.rgb-glow-fast{animation:none!important;border:1px solid #d8a48c!important;box-shadow:0 3px 12px #783d1912!important}
+.rgb-glow:before,.rgb-glow-fast:before{display:none!important}
+.rgb-bar,.status-strip-urgent{animation:none!important;background:#ffebdf!important;color:#8d3c23!important;box-shadow:none!important}
+#edge-alert-overlay{display:none!important}
+.receiving-card-code{color:var(--warehouse-sap);font-variant-numeric:tabular-nums}
+.receiving-card-code:before{content:'SAP';font-size:11px;letter-spacing:.04em;background:#e8effd;padding:3px 6px;border-radius:6px}
+.receiving-card-comp{color:var(--warehouse-comp)!important}
+.receiving-card-comp:before{content:'COMP';font-size:11px;background:#f0eafa;padding:3px 6px;border-radius:6px}
+.receiving-card-code>.copy-inline>span:first-child,.receiving-card-comp .copy-inline>span:first-child{white-space:normal!important;overflow-wrap:anywhere}
+#m-item-code .recv514-head-value{color:#d4c0ff;font-size:20px}
+#m-item-code .recv514-sap{color:#c2e4ff;font-size:26px}
+#m-item-code .recv514-sap button,.copy-mini-btn{min-width:44px!important;min-height:44px!important}
+.recv514-autocomplete-option[aria-selected=true]{background:#e8f0ff;outline:2px solid #7198da;outline-offset:-2px}
+#recv514-location-list{max-height:240px;overflow-y:auto;overscroll-behavior:contain;z-index:40}
+#user-workspace-main{background:#f2f6fa!important}
+#view-pending .item-enter,#view-written .item-enter,#view-issues .item-enter,#view-rejected .item-enter{border-radius:18px!important;box-shadow:0 3px 13px #22395509!important}
+#view-pending .item-enter:hover,#view-written .item-enter:hover{transform:none}
+#auth-school-bg{display:none}
+#screen-auth{background:#edf4f8!important;isolation:isolate}
+#screen-auth>.warehouse-scene{position:absolute;inset:0 47% 0 0;z-index:0}
+#screen-auth>.custom-scroll{margin-left:53%;width:47%;background:var(--bg-body,#f8fafc);padding:24px!important}
+#screen-auth .text-5xl{font-size:36px}
+#screen-auth .w-24.h-24{width:64px;height:64px;margin-bottom:16px;box-shadow:none}
+#auth-user-list,#auth-admin-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:540px}
+#auth-bottom-actions button{min-height:56px;height:auto;padding:14px;font-size:16px}
+.warehouse-scene{position:relative;overflow:hidden;background:#edf4f8 url('assets/warehouse-scene.webp') center/cover no-repeat;border-radius:20px;min-height:270px}
+.warehouse-scene:before{content:'';position:absolute;inset:0;background:linear-gradient(#eff7fb30,#d6e8f180)}
+.warehouse-caption{position:absolute;top:30px;left:24px;right:24px;padding:15px 18px;border-radius:16px;background:#ffffffed;color:#284963;font-size:21px;font-weight:700}
+.warehouse-caption small{display:block;font-size:13px;font-weight:400;margin-top:5px}
+.warehouse-actor{position:absolute;width:160px;height:160px;bottom:28px;background-image:url('assets/warehouse-mascots.webp');background-size:800% 300%;background-repeat:no-repeat;will-change:transform}
+.warehouse-runner{left:0;background-position-y:0%;z-index:3}
+.warehouse-scanner{left:25%;background-position-y:50%;z-index:2}
+.warehouse-signer{right:0;background-position-y:100%;z-index:4}
+.warehouse-belt{position:absolute;bottom:18px;left:0;right:0;height:12px;background:repeating-linear-gradient(90deg,#5f788c 0 16px,#adc1cd 16px 19px);animation:warehouse-belt 1s linear infinite}
+#loading-overlay{background:#142b46b3}
+#loading-overlay>.warehouse-loading{width:min(620px,calc(100vw - 32px));padding:20px;background:var(--bg-card,#fff);border-radius:24px;display:block}
+.warehouse-loading .warehouse-scene{height:280px;min-height:0;margin-bottom:16px}
+.warehouse-loading p{text-align:center;color:var(--text-main,#213852)}
+.warehouse-progress{height:5px;overflow:hidden;background:#dce8ed;border-radius:8px;margin-top:15px}
+.warehouse-progress:after{content:'';display:block;height:100%;width:30%;background:#71a88b;animation:warehouse-progress 1.7s ease-in-out infinite}
+@keyframes warehouse-belt{to{background-position:19px 0}}
+@keyframes warehouse-progress{50%{transform:translateX(230%)}}
+@media(min-width:1100px){#user-workspace-main{max-width:none!important;width:100%}#view-pending,#view-written{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))!important}}
+@media(max-width:767px){#screen-auth>.warehouse-scene{position:relative;inset:auto;flex:none;height:245px;min-height:245px;border-radius:0}#screen-auth>.custom-scroll{margin-left:0;width:100%;padding:16px!important}#screen-auth .mb-10.mt-8{margin-top:12px;margin-bottom:20px}.warehouse-caption{top:12px;font-size:17px;padding:10px}.warehouse-actor{width:125px;height:125px;bottom:20px}.warehouse-scanner{left:25%}.warehouse-loading .warehouse-scene{height:240px}#modal-footer{padding:12px 12px calc(12px + env(safe-area-inset-bottom))!important}#view-pending,#view-written,#view-issues,#view-rejected{padding-left:10px!important;padding-right:10px!important}button,input,select{touch-action:manipulation}}
+@media(prefers-reduced-motion:reduce){.warehouse-belt,.warehouse-progress:after{animation:none}.warehouse-actor{will-change:auto}}
+@media print{.warehouse-scene,.warehouse-loading{display:none!important}}

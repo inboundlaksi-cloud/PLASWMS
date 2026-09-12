@@ -1,0 +1,18 @@
+PLAS WMS v5.3.0 — QA REPORT
+Date: 2026-08-01
+
+PASSED
+- JavaScript syntax: script.js, fzone-module.js, fzone-topup-integration.js
+- F-Zone bridge all-account test
+- F-Zone bridge security test
+- F-Zone map data and render layout tests
+- F-Zone smoke test including short /p/<id> QR path
+- TOPUP production integration test
+- TOPUP mobile workspace behavior test
+- HTML/local asset integrity test
+
+NOT REBUILT
+- tailwind-built.css was not regenerated because the package registry mirror did not provide all locked artifacts. The tested compiled CSS already included in the package is retained.
+
+Automated test summary: 9 passed, 0 failures.
+- PLAS cross-project F-ZONE reference migration: syntax verified; production run requires PLAS Firebase credentials and F-ZONE mapping file.

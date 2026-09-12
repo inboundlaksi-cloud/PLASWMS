@@ -1,0 +1,73 @@
+PLAS WMS v5.8.0 QA REPORT
+Date: 2026-08-06
+
+1. Root JavaScript syntax
+PASS: all root JavaScript files
+
+2. Automated tests
+RUN tests/academy-league-test.js
+✅ PLAS_ACADEMY_LEAGUE_V5.8.0_ACTIVE
+✅ academy-league-test passed
+RUN tests/fzone-bridge-all-accounts-test.js
+✅ PLAS_FZONE_LOGIN_HOOK_2_0_5_MAP_LAUNCHER_ACTIVE
+🔄 Calling fzone-session for Worker A role writer
+✅ PLAS_FZONE_LOGIN_HOOK_2_0_5_MAP_LAUNCHER_ACTIVE
+🔄 Calling fzone-session for Admin A role admin
+✅ PLAS_FZONE_LOGIN_HOOK_2_0_5_MAP_LAUNCHER_ACTIVE
+🔄 Calling fzone-session for Supervisor A role supervisor
+✅ PLAS_FZONE_LOGIN_HOOK_2_0_5_MAP_LAUNCHER_ACTIVE
+🔄 Calling fzone-session (PLAS no-PIN account) for Worker No PIN role writer
+✅ PLAS_FZONE_LOGIN_HOOK_2_0_5_MAP_LAUNCHER_ACTIVE
+🔄 Calling fzone-session (PLAS no-PIN account) for Worker Popup Blocked role writer
+PASS PLAS F-Zone all-accounts bridge test
+RUN tests/fzone-bridge-security-test.js
+PASS PLAS F-Zone bridge security test
+RUN tests/fzone-map-data-test.js
+PASS fzone-map-data-test
+RUN tests/fzone-pallet-ref-migration-test.js
+PASS PLAS F-Zone cross-project reference migration safety test
+RUN tests/fzone-render-layout-test.js
+PASS fzone-render-layout-test
+RUN tests/fzone-smoke-test.js
+PASS fzone-smoke-test
+RUN tests/fzone-topup-complete-recovery-test.js
+PLAS v5.7.4 topup recovery regression test passed
+RUN tests/fzone-topup-integration-test.js
+PASS PLAS × F-Zone TopUp production integration test
+RUN tests/fzone-topup-mobile-density-test.js
+PASS PLAS mobile TOPUP density test
+RUN tests/fzone-topup-mobile-workspace-test.js
+✅ PLAS_FZONE_TOPUP_INTEGRATION_1.3.0-complete-recovery_ACTIVE
+PASS PLAS TopUp mobile workspace behavior test
+RUN tests/html-integrity-test.js
+PASS HTML/local-asset integrity test
+RUN tests/label-print-session-behavior-test.js
+✅ label-print-session-behavior-test passed
+RUN tests/label-print-workflow-test.js
+✅ label-print-workflow-test passed
+RUN tests/receiving-bulk-written-test.js
+✅ receiving-bulk-written-test passed
+RUN tests/topup-label-safe-left-test.js
+✅ topup-label-safe-left-test passed
+RUN tests/topup-print-dialog-regression-test.js
+PASS TOPUP print dialog regression test
+RUN tests/topup-production-v570-behavior-test.js
+✅ topup-production-v570-behavior-test passed
+RUN tests/topup-sticker-integration-test.js
+✅ topup-sticker-integration-test v5.7.4 passed
+RUN tests/topup-sticker-parser-test.js
+✅ topup-sticker-parser-test passed
+RUN tests/topup-sticker-sequence-test.js
+✅ topup-sticker-sequence-test passed
+
+PASS: 21 / 21 test files
+
+3. HTML and local assets
+PASS HTML/local-asset integrity test
+PASS: HTML/local assets
+
+4. Academy feature checks
+PASS: 6 rank badge assets, 4 score icons, season engine, task hooks, reward transactions, penalty history and legacy backfill assertions
+
+5. Tailwind build
+NOT RUN: Tailwind CLI is not installed in the isolated build environment. No Tailwind source was changed for Academy League; the feature uses academy-league.css.

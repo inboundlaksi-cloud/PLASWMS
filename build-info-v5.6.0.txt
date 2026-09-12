@@ -1,0 +1,8 @@
+PLAS WMS v5.6.0
+Build: TOPUP Matched Control
+Date: 2026-08-04
+
+- Sticker/control-sheet sequence codes
+- Same ITEM grouped together
+- Compact 50x25 mm sticker layout
+- Minimal detailed TOPUP control sheet

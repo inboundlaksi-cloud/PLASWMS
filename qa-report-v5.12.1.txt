@@ -1,0 +1,13 @@
+PLAS WMS v5.12.1 — QA Report
+Date: 2026-08-08
+
+PASS: Production CSS build
+PASS: PLAS Quest launch/session bridge
+PASS: Ticket and work-event keys derive from existing PLAS_BRIDGE_SECRET
+PASS: Default game URL works without adding GAME_PUBLIC_URL
+PASS: F-Zone integration and quota fallback
+PASS: AX copy/paste import and complete-row preservation
+PASS: Label print/pairing/receiving/written/reprint workflows
+PASS: Academy League and Supervisor operations
+
+Result: Full npm run check suite passed.

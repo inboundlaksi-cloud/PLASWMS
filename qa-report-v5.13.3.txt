@@ -1,0 +1,15 @@
+PLAS WMS v5.13.3 — QA Report
+Date: 2026-08-10
+
+PASS: JavaScript syntax validation
+PASS: Top Location completion remains in the TopUp workspace
+PASS: Completion tap cannot open product-label printing
+PASS: Completion tap cannot open TOPUP sticker printing
+PASS: Capture-phase Quick Hub click guard blocks delayed mobile ghost clicks
+PASS: All print surfaces and Quick Hub are closed after completion
+PASS: Service Worker registration and cache are bumped to v5.13.3
+PASS: Employee acceptance cancellation remains available
+PASS: Impeccable UI detection on the changed TopUp integration returned no findings
+PASS: Full npm run check regression suite
+
+Result: ready for Netlify deployment and physical mobile smoke test.

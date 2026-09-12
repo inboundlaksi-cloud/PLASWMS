@@ -1,0 +1,20 @@
+PLAS WMS v5.13.9 — QUOTA + AX ON HAND SAFE
+Build date: 2026-08-20
+
+F-ZONE / FIRESTORE QUOTA
+- Academy no longer subscribes to up to 5,000 events on every PLAS startup.
+- Academy listeners start only when the Academy/profile screen is opened.
+- Event history is bounded to the latest 500 events; redemptions to 200.
+- Automatic Academy backfill at startup was removed. Manual sync runs once and asks for confirmation.
+- Daily soft-cap counters are stored on the employee profile, so scoring no longer requires a large event download.
+- F-Zone fallback now distinguishes database quota, network failure, and bridge service failure.
+
+AX ON HAND POLICY
+- On Hand comes from AX `Qty Onhand` only.
+- Blank/missing `Qty Onhand` becomes 0.
+- `InventQty` and `Quantity` are retained as reference/incoming data and never used as On Hand.
+- Active AX_COPY records created by older versions are repaired automatically in batches after items load.
+- AX cards and detail dialogs show `On Hand: 0` explicitly.
+
+Service worker cache: plas-wms-v5.13.9-quota-onhand-safe
+

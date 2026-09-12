@@ -1,0 +1,22 @@
+PLAS WMS v5.7.4 QA REPORT
+
+Scope
+- Label printing automatically confirms status when print action is triggered.
+- Receiving page includes status filters, selection, and bulk Written confirmation.
+- Bulk Written action uses a floating review dialog and blocks records without LOC.
+
+Automated checks
+- JavaScript syntax: PASS
+- HTML/local asset integrity: PASS
+- Label auto-confirm session behavior: PASS
+- NIIMBOT -> TSC same-session deduplication: PASS
+- Reprint reason and reprint status: PASS
+- Receiving ready filter: PASS
+- Receiving bulk Written: PASS
+- Receiving missing LOC block: PASS
+- Existing F-Zone, TOPUP, print dialog, parser and sequence regressions: PASS
+- Total Node test files: 20 / 20 PASS
+
+Notes
+- Browser print cancellation cannot be detected reliably; status is confirmed when the user triggers the print workflow, as requested.
+- Existing legacy pending print sessions remain confirmable, but new print sessions are auto-confirmed.

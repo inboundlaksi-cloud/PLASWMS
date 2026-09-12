@@ -1,0 +1,52 @@
+/* Shared responsive surfaces. All selectors target existing views; workflows remain intact. */
+.warehouse-scene{background-image:linear-gradient(to bottom,#edf5f830 0%,#edf5f855 30%,#f8fbfc 60%),url('assets/warehouse-scene.webp');isolation:isolate;container-type:inline-size}
+.warehouse-actor{background-size:600% 400%;bottom:0;mix-blend-mode:multiply;filter:none;width:160px;height:160px}
+.warehouse-run-lane{position:absolute;left:0;right:0;bottom:135px;height:160px;overflow:hidden;z-index:1;mix-blend-mode:multiply}
+.warehouse-runner{left:0;background-image:url('assets/warehouse-run-24.webp')}
+.warehouse-station{position:absolute;bottom:20px;left:6%;width:160px;height:160px;z-index:2;mix-blend-mode:multiply}
+.warehouse-scanner{left:0;background-image:url('assets/warehouse-scan-24.webp')}
+.warehouse-sign-station{position:absolute;bottom:20px;right:6%;width:160px;height:160px;z-index:3;mix-blend-mode:multiply}
+.warehouse-signer{right:0;background-image:url('assets/warehouse-sign-24.webp')}
+.warehouse-sign-text{position:absolute;left:24%;top:58%;width:52%;height:18%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff7df;color:#264669;font-size:13px;font-weight:700;line-height:1.15;white-space:nowrap}
+.warehouse-sign-text small{font-size:10px;line-height:1.25;font-weight:400}
+.warehouse-flying-box{position:absolute;left:20px;top:90px;width:24px;height:21px;border:1px solid #916739;background:#deae6e;opacity:0;z-index:4;border-radius:2px}
+.warehouse-flying-box:after{content:'';position:absolute;left:10px;top:0;bottom:0;width:4px;background:#f6d49c}
+.warehouse-caption{z-index:5}
+#loading-overlay.hidden,#loading-overlay[hidden],.warehouse-sign-station[hidden]{display:none!important}
+#screen-auth .warehouse-run-lane{bottom:24px}
+#screen-auth .warehouse-station{left:auto;right:12%;bottom:24px}
+.warehouse-loading .warehouse-caption{display:none}
+#screen-auth>.warehouse-scene{border-radius:0}
+#screen-auth>.custom-scroll{min-height:0}
+.warehouse-loading .warehouse-scene{height:390px}
+#modal-tsc>div{max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain}
+#modal-tsc button{min-height:44px;min-width:44px}
+#modal-detail input,#modal-issue textarea,#modal-settings input{font-size:16px}
+#m-item-code .recv514-head{gap:10px}
+#m-item-code .recv514-head-row{min-width:0;align-items:flex-start}
+#m-item-code .recv514-head-value,#m-item-code .recv514-sap{overflow-wrap:anywhere;min-width:0}
+#m-item-code .recv514-head-copy,#m-item-code .recv514-sap button{flex-shrink:0}
+#m-item-code .recv514-sap{order:-1;align-items:flex-start}
+#m-item-code .recv514-head-label{color:#d8c9f5}
+.recv514-fact strong{white-space:normal!important;overflow-wrap:anywhere}
+.recv514-source-note{line-height:1.5}
+#modal-footer{gap:10px!important}
+#modal-footer button{min-height:48px}
+#view-history,#view-done,#view-move,#view-topup{padding-bottom:calc(120px + env(safe-area-inset-bottom))!important}
+#view-history>div,#view-done>div,#view-issues>div{min-width:0}
+#view-history table,#screen-admin table{font-variant-numeric:tabular-nums}
+#modal-history-view>div,#modal-history-viewer>div,#modal-user-management>div,#modal-settings>div,#modal-issue>div{border-radius:20px}
+#modal-settings input,#modal-settings select,#modal-issue textarea,#modal-user-management input{border-radius:12px;min-height:44px}
+#view-history button,#view-issues button,.lpw-check,.lpw-row-actions button{min-height:44px;min-width:44px}
+.lpw-item-top strong{color:#234fab;overflow-wrap:anywhere}
+.lpw-item-top small{color:#716099;overflow-wrap:anywhere}
+.lpw-foot{gap:10px;flex-wrap:wrap}
+.lpw-foot-actions{display:flex;gap:8px;flex-wrap:wrap}
+.lpw-foot-actions button{min-height:44px;padding:10px 14px;border:1px solid #cbd9e6;border-radius:12px;background:#edf4fa;color:#25466c;font-weight:700}
+.lpw-foot-actions .dark{background:#245dc3;color:white}
+.lpw-item-top,.lpw-chips{flex-wrap:wrap}
+[data-theme=dark] .warehouse-sign-text{background:#fff7df;color:#264669}
+@media(min-width:1100px){#auth-user-list,#auth-admin-list{grid-template-columns:repeat(3,minmax(0,1fr))}#screen-auth>.warehouse-scene{right:48%}#screen-auth>.custom-scroll{margin-left:52%;width:48%}.warehouse-station,.warehouse-sign-station,.warehouse-actor{width:190px;height:190px}.warehouse-run-lane{height:190px;bottom:185px}.warehouse-sign-text{font-size:16px}.warehouse-sign-text small{font-size:11px}.warehouse-loading .warehouse-scene{height:450px}}
+@media(max-width:767px){#screen-auth>.warehouse-scene{height:325px;min-height:325px;right:auto}#screen-auth>.custom-scroll{margin-left:0;width:100%}.warehouse-run-lane{height:130px;bottom:118px}.warehouse-actor,.warehouse-station,.warehouse-sign-station{width:130px;height:130px}.warehouse-station{left:3%}.warehouse-sign-station{right:3%}.warehouse-loading .warehouse-scene{height:325px}.warehouse-sign-text{font-size:11px}.warehouse-sign-text small{font-size:9px}.warehouse-caption{font-size:16px;top:10px;left:12px;right:12px;padding:8px 12px}.warehouse-caption small{font-size:11px}.lpw-foot-actions{width:100%}.lpw-foot-actions button{flex:1;font-size:12px}#view-history{padding:12px 10px 140px!important}#modal-history-view>div,#modal-history-viewer>div{max-width:calc(100vw - 16px)}#modal-detail>div{max-height:calc(100dvh - 12px)!important}#screen-auth .text-5xl{font-size:30px}#auth-user-list button{padding:12px;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){.warehouse-actor{transition:none!important}.warehouse-progress:after{animation:none!important;width:100%;opacity:.5}}
+@media print{.lpw-foot-actions{display:none!important}}

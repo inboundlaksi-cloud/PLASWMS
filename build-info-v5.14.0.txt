@@ -1,0 +1,10 @@
+PLAS WMS v5.14.0
+Build: Receiving Workspace Redesign + AX COMP Copy + TSC Only + Location Autocomplete
+Date: 2026-09-10
+
+- Redesigned Receiving cards and item detail hierarchy for desktop and mobile.
+- Added one-tap COPY for SAP, COMP and PO/item identifiers.
+- Added COPY COMP for AX using comma-separated main COMP values.
+- Added Location autocomplete from current item, same COMP, work history and master locations.
+- Removed NIIMBOT and A4 sticker entry points; Receiving labels now open TSC settings directly.
+- Kept A4 reports and TOPUP control sheets because they are documents, not stickers.

@@ -1,0 +1,14 @@
+PLAS WMS v5.11.6 — QA REPORT
+Date: 2026-08-07
+
+PASS: Reported P2621002955 shape imports all 19 AX rows
+PASS: Same Line No at different Location/Quantity remains separate
+PASS: Retry after v5.11.5 skips 10 existing rows and adds 9 missing rows
+PASS: Exact duplicate AX rows remain blocked
+PASS: Reordered AX columns and encoded tab suffix are accepted
+PASS: Firestore batch write is used for confirmed imports
+PASS: Partial/failed saves no longer report full success
+PASS: Existing PLAS 8-column import remains compatible
+PASS: Full automated regression suite via npm run check
+
+Result: READY FOR USER ACCEPTANCE TESTING

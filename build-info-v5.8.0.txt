@@ -1,0 +1,6 @@
+Product: PLAS WMS
+Version: 5.8.0
+Feature: PLAS Academy League
+Build date: 2026-08-06
+Main modules: academy-league.js, academy-league.css
+Cache: plas-wms-v5.8.0-academy-league

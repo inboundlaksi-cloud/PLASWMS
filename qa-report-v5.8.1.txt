@@ -1,0 +1,36 @@
+PLAS WMS v5.8.1 QA REPORT
+Date: 2026-08-06
+
+1. Root JavaScript syntax
+PASS: all root JavaScript files
+
+2. Production build
+PASS: Tailwind CSS build
+
+3. Automated regression tests
+PASS: 21 / 21 test files
+Includes mobile Receiving controls, Academy League, Supervisor theme scope,
+F-Zone bridge, TOPUP, label printing, HTML integrity and service worker cache checks.
+
+4. Mobile Receiving verification
+PASS: bottom bulk confirmation bar hidden at viewport widths <= 800px
+PASS: bulk select, select-filtered and quick-written controls hidden on mobile
+PASS: item card remains the primary tap target and opens the existing detail flow
+PASS: status filters remain available with larger 11px labels and 38px controls
+PASS: desktop bulk confirmation workflow preserved
+
+5. PLAS Academy League verification
+PASS: Supervisor purple theme now targets only the direct Sidebar child
+PASS: nested Academy character card is no longer recolored purple
+PASS: profile detail surface uses light Slate/Lavender background
+PASS: stat cards use white surfaces and dark text; purple remains an accent
+
+6. UI detector review
+PASS for requested scope: no blocking layout or interaction regression found
+NOTE: the detector reports legacy warnings in unrelated screens (small text,
+contrast pairs, decorative gradients and accent borders). They were not changed
+in this focused patch to avoid altering established screens outside the request.
+
+7. Cache and assets
+PASS: service worker cache bumped to plas-wms-v5.8.1-mobile-receiving-academy-card
+PASS: HTML references current v5.8.1 CSS/JS cache keys

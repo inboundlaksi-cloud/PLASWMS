@@ -1,0 +1,8 @@
+PLAS WMS v5.7.3 — TOPUP LABEL SAFE-LEFT FIX
+
+Actual production renderer fixed: topup-production-v570.js
+- Moved control number inward from the left edge.
+- Restored solid black control badge with larger white digits.
+- Shifted the remaining sticker content slightly right.
+- Added right-side safety margin to keep the 50x25 mm layout balanced.
+- Updated cache key and asset query to v5.7.3.

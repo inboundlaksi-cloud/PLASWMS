@@ -1,0 +1,19 @@
+PLAS WMS v5.13.5 — QA REPORT
+Date: 2026-08-10 (Asia/Bangkok)
+
+RESULT: PASS
+
+Checks completed:
+- JavaScript syntax: PASS
+- Receiving printed-status behavior: PASS
+- Printed-only bulk selection: PASS
+- Missing-Location exclusion: PASS
+- Primary + secondary label fields: PASS
+- Label print session behavior: PASS
+- Full npm run check (24 automated suites): PASS
+- Tailwind production CSS build: PASS
+- Impeccable UI detector on changed UI paths: PASS (0 findings)
+
+Notes:
+- Mobile bulk controls remain hidden intentionally, preserving the established mobile flow and preventing a bottom action bar from covering small screens.
+- Written items remain printable as a forgotten-label safeguard.

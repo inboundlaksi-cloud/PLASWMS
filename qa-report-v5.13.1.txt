@@ -1,0 +1,16 @@
+PLAS WMS v5.13.1 — QA Report
+Date: 2026-08-10
+
+PASS: JavaScript syntax validation
+PASS: PLAS-only TopUp completion stays inside TopUp workspace
+PASS: Configured F-Zone Location completion stays inside TopUp workspace
+PASS: Completion click-through cannot open TOPUP sticker printing
+PASS: Mobile queue returns to Active or Open instead of Done/Print
+PASS: F-Zone match loading is deferred until an idle browser frame
+PASS: Forced scrollIntoView removed from mobile queue switching
+PASS: Mobile backdrop blur disabled and native touch scrolling enabled
+PASS: Impeccable UI detection on changed JS/CSS returned no findings
+PASS: Full npm run check regression suite
+PASS: Existing AX import, Receiving/Written print, TOPUP sticker, Academy League, PLAS Quest and Supervisor workflows
+
+Result: ready for Netlify deployment and mobile device smoke test.

@@ -1,0 +1,12 @@
+PLAS WMS
+Version: 5.11.1
+Build date: 2026-08-06
+Release: Receiving / Written Label Printing
+Cache: plas-wms-v5.11.1-receiving-written-labels
+Package: PLASWMS-v5.11.1.zip
+
+Compatibility:
+- Preserves the existing Receiving-to-Written work flow.
+- Printing records sticker-print evidence only and never writes the work status.
+- Existing print evidence is normalized without requiring a backend migration.
+- Written and Done records are blocked at selection and print function boundaries.

@@ -1,0 +1,11 @@
+PLAS WMS v5.11.7 — QA REPORT
+
+PASS: Full npm check (21 suites)
+PASS: JavaScript syntax checks
+PASS: 19 copied AX rows always preview and save as 19 items
+PASS: Existing matching records do not reduce the copied row count
+PASS: Identical copied rows remain separate PLAS items
+PASS: Existing PLAS 8-column import compatibility
+PASS: Existing Receiving, TOPUP, print, Academy, Supervisor and F-Zone tests
+
+See QA-REPORT-v5.11.7.txt for details.

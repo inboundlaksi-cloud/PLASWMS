@@ -1,0 +1,9 @@
+PLAS WMS v4.9.4 QA
+==================
+PASS: node --check script.js, fzone-bridge.js, fzone-module.js, sw.js และ Netlify Functions ทั้งหมด
+PASS: npm run check ทั้ง 6 ชุด
+PASS: Writer/Admin/Supervisor แบบมี PIN
+PASS: Writer แบบไม่มี PIN ส่ง noPin:true และออก Bridge session
+PASS: PIN ไม่ถูกส่งผ่าน URL
+PASS: บัญชียังต้องมี fzoneMove หรือเป็น Admin/Supervisor
+NOTE: โหมดไม่มี PIN มีระดับความปลอดภัยเท่ากับ Login PLAS เดิมของบัญชีนั้น

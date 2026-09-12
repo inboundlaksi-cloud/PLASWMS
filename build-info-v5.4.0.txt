@@ -1,0 +1,9 @@
+PLAS WMS BUILD v5.4.0
+Feature: TOPUP Sticker Import & Print
+Entry: Quick Hub > พิมพ์สติกเกอร์ TOPUP
+Primary import: TXT
+Fallback import: HTM/HTML
+Sticker: 50x25 mm, two-up 102x25 mm, 2 mm center gap
+QR: disabled
+Primary visual fields: ITEM / LOC / QTY
+Metadata: TFOR / From warehouse -> To warehouse

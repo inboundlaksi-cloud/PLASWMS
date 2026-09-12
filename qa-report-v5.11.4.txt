@@ -1,0 +1,23 @@
+PLAS WMS v5.11.4 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks for fzone-bridge.js and _bridge-lib.js
+PASS: HTML/local asset integrity
+PASS: 20 automated test suites via npm run check
+PASS: Standard PLAS session and one-time F-Zone ticket flow
+PASS: Writer PIN account
+PASS: Admin PIN account
+PASS: Supervisor PIN account
+PASS: Explicit no-PIN bridge account
+PASS: Popup-blocked same-tab navigation
+PASS: Direct F-Zone portal opens after RESOURCE_EXHAUSTED
+PASS: Direct fallback keeps tab, map parent, location, point and pallet parameters
+PASS: Direct fallback never appends an invalid or fabricated ticket
+PASS: Plain Thai notice explains that the Bridge is temporarily full
+PASS: Failed login-hook session is reused as an error for 30 seconds instead of sending a duplicate request
+PASS: Firestore code 8/resource-exhausted/quota errors map to HTTP 503 BRIDGE_QUOTA_EXHAUSTED
+PASS: PIN and permission failures do not use the quota fallback
+PASS: Existing server-side permission check before ticket issuance remains intact
+PASS: Existing PLAS/F-Zone TOPUP, Receiving, print, Academy and Supervisor regressions
+
+Result: READY FOR USER ACCEPTANCE TESTING

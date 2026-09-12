@@ -1,0 +1,24 @@
+{
+  "name": "plas-wms-fzone-bridge",
+  "version": "5.21.0",
+  "private": true,
+  "description": "PLAS WMS receiving redesign with instant copy, AX COMP batch copy, TSC-only labels and Location autocomplete",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "firebase-admin": "12.7.0"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./tailwind-input.css -o ./tailwind-built.css --minify",
+    "check": "npm run build:css && node tests/fzone-bridge-all-accounts-test.js && node tests/fzone-bridge-security-test.js && node tests/game-bridge-test.js && node tests/game-season-settlement-test.js && node tests/fzone-map-data-test.js && node tests/fzone-render-layout-test.js && node tests/fzone-smoke-test.js && node tests/html-integrity-test.js && node tests/quickhub-closed-interaction-test.js && node tests/ax-copy-import-test.js && node tests/fzone-topup-integration-test.js && node tests/fzone-topup-mobile-workspace-test.js && node tests/topup-sticker-parser-test.js && node tests/topup-sticker-integration-test.js && node tests/topup-sticker-sequence-test.js && node tests/label-print-workflow-test.js && node tests/label-print-session-behavior-test.js && node tests/label-pairing-scanner-test.js && node tests/receiving-bulk-written-test.js && node tests/topup-label-safe-left-test.js && node tests/topup-print-dialog-regression-test.js && node tests/topup-production-v570-behavior-test.js && node tests/academy-league-test.js && node tests/supervisor-operations-test.js",
+    "migrate:fzone-pallet-refs": "node tools/migrate-fzone-pallet-refs-v5.3.0.js",
+    "verify:fzone-pallet-refs": "node tools/verify-fzone-pallet-refs-v5.3.0.js",
+    "check:v531": "node tests/fzone-topup-complete-recovery-test.js",
+    "check:warehouse": "node warehouse-tests.cjs"
+  },
+  "devDependencies": {
+    "@fontsource/sarabun": "^5.2.8",
+    "tailwindcss": "^3.4.17"
+  }
+}

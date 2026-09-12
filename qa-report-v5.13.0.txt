@@ -1,0 +1,14 @@
+PLAS WMS v5.13.0 — QA Report
+Date: 2026-08-10
+
+PASS: Production CSS build
+PASS: Full PLAS WMS regression suite
+PASS: PLAS Quest launch/session/work bridge
+PASS: Game season settlement signature verification
+PASS: Idempotent settlement and per-user Event ID
+PASS: Academy Reward Points profile increment
+PASS: Game reward excluded from WMS performance metrics
+PASS: Academy history/earning guide for PLAS Quest
+PASS: Existing AX import, label, Receiving/Written, TopUp and F-Zone workflows
+
+Result: npm run check passed.

@@ -1,0 +1,13 @@
+PLAS WMS
+Version: 5.11.2
+Build date: 2026-08-06
+Release: Written Printable / Compact Workspace
+Cache: plas-wms-v5.11.2-written-printable-compact-workspace
+Package: PLASWMS-v5.11.2.zip
+
+Compatibility:
+- Preserves the existing Receiving-to-Written work flow.
+- Printing Receiving or Written records changes label print evidence only.
+- Written status remains Written after first print and reprint.
+- Done/Received records remain outside the label-print workflow.
+- Existing one-sticker-per-item pairing and print history are preserved.

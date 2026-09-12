@@ -1,0 +1,7 @@
+Product: PLAS WMS
+Version: 5.10.0
+Feature: Supervisor Operations Center, unified work queue, SLA, exceptions and shift handover
+Build date: 2026-08-06
+Changed modules: supervisor-operations.js, supervisor-operations.css, index.html, sw.js
+Persistent collections: supervisorOpsConfig, supervisorHandoverReports
+Cache: plas-wms-v5.10.0-supervisor-operations-center

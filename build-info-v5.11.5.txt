@@ -1,0 +1,15 @@
+PLAS WMS
+Version: 5.11.5
+Build date: 2026-08-06
+Release: AX Copy/Paste Import
+Cache: plas-wms-v5.11.5-ax-copy-import
+Package: PLASWMS-v5.11.5.zip
+
+Deployment:
+- Deploy the complete PLAS WMS bundle.
+- No Firebase schema migration is required.
+
+Compatibility:
+- AX Copy/Paste is added to the existing Admin receiving import modal.
+- Existing PLAS 8-column Copy/Paste remains supported.
+- Existing F-Zone, TOPUP, label print, Academy and Supervisor workflows are unchanged.

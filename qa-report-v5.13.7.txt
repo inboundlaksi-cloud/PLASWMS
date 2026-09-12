@@ -1,0 +1,22 @@
+PLAS WMS v5.13.7 — QA REPORT
+Date: 2026-08-10
+
+PASS npm run check
+- CSS production build completed
+- 24 automated regression suites passed
+- Full-width desktop workspace assertion passed
+- Adaptive desktop grid assertion passed
+- Horizontal page overflow guard assertion passed
+- TopUp full-width assertion passed
+- Mobile, printing, QR pairing, AX import, F-Zone, Academy League and Supervisor regressions passed
+
+PASS Impeccable UI post-fix scan
+- 0 findings in the changed layout and UI files
+
+Manual production check after Netlify deploy
+1. Open Written or Receiving on a Full HD computer
+2. Confirm cards extend across the available width
+3. Confirm there is no page-level horizontal scrollbar
+4. Resize the window and confirm columns adjust automatically
+5. Confirm mobile remains one column and tablet remains two columns
+

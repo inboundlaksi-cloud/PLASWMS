@@ -1,0 +1,159 @@
+/* ════════════════════════════════════════════════════════════════════
+   ROLE THEMES v2 — ธีมตามบทบาท (เปลี่ยนทั้งแอป รวมการ์ด/แถบ/หน้าใน)
+   html[data-role-theme="staff|intern|supervisor|admin"]
+   ════════════════════════════════════════════════════════════════════ */
+
+html[data-role-theme="staff"]      { --rt-primary:#1d4ed8; --rt-primary-d:#1e3a8a; --rt-soft:#eef2ff; --rt-soft2:#dbeafe; --rt-card:#ffffff; --rt-line:#c7d2fe; --rt-text:#1e3a8a; }
+html[data-role-theme="intern"]     { --rt-primary:#f59e0b; --rt-primary-d:#b45309; --rt-soft:#fff7ed; --rt-soft2:#fef3c7; --rt-card:#fffdf7; --rt-line:#fcd34d; --rt-text:#92400e; }
+html[data-role-theme="supervisor"] { --rt-primary:#7c3aed; --rt-primary-d:#5b21b6; --rt-soft:#f5f3ff; --rt-soft2:#ede9fe; --rt-card:#fdfcff; --rt-line:#ddd6fe; --rt-text:#5b21b6; }
+html[data-role-theme="admin"]      { --rt-primary:#537f58; --rt-primary-d:#34563e; --rt-soft:#faf9f5; --rt-soft2:#e8f2e3; --rt-card:#fffefa; --rt-line:#dce5d8; --rt-text:#263f36; }
+
+/* ───────── พื้นหลังหน้าจอ ───────── */
+html[data-role-theme] #screen-user,
+html[data-role-theme] #screen-supervisor,
+html[data-role-theme] #screen-admin { position: relative; }
+
+html[data-role-theme="staff"] #screen-user {
+    background-color: var(--rt-soft) !important;
+    background-image: linear-gradient(rgba(199,210,254,0.35) 1px, transparent 1px);
+    background-size: 100% 30px;
+}
+html[data-role-theme="intern"] #screen-user {
+    background-color: var(--rt-soft) !important;
+    background-image:
+        radial-gradient(circle at 10% 15%, rgba(253,230,138,0.4) 0 70px, transparent 71px),
+        radial-gradient(circle at 90% 10%, rgba(186,230,253,0.4) 0 60px, transparent 61px),
+        radial-gradient(circle at 82% 86%, rgba(187,247,208,0.35) 0 80px, transparent 81px),
+        radial-gradient(circle at 15% 88%, rgba(251,207,232,0.35) 0 60px, transparent 61px);
+    background-attachment: fixed;
+}
+html[data-role-theme="supervisor"] #screen-supervisor { background-color: var(--rt-soft) !important; }
+html[data-role-theme="admin"] #screen-admin { background-color: var(--rt-soft) !important; }
+
+/* ───────── การ์ดรายการสินค้า — เอาสีขาวออก ใช้สีธีม (เฉพาะการ์ด ไม่โดนปุ่ม/modal) ───────── */
+html[data-role-theme] #screen-user .item-enter {
+    background-color: var(--rt-card) !important;
+}
+html[data-role-theme="intern"] #screen-user .item-enter {
+    border-radius: 20px !important;
+    border: 2px solid var(--rt-line) !important;
+}
+html[data-role-theme="staff"] #screen-user .item-enter {
+    border-top: 3px solid var(--rt-primary) !important;
+}
+html[data-role-theme="supervisor"] #screen-user .item-enter,
+html[data-role-theme="supervisor"] #screen-supervisor .item-enter {
+    border: 1px solid var(--rt-line) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(76,29,149,0.08) !important;
+}
+html[data-role-theme="admin"] .item-enter {
+    border: 1px solid var(--rt-line) !important;
+    box-shadow: 0 4px 14px rgba(120,53,15,0.08) !important;
+}
+
+/* ───────── แถบ tabs / nav ที่เป็นพื้นขาว ───────── */
+html[data-role-theme] #screen-user nav.bg-white,
+html[data-role-theme] #screen-user .bg-white\/80,
+html[data-role-theme] #screen-user header.bg-white {
+    background-color: var(--rt-soft2) !important;
+}
+
+/* ───────── หัวแอป (logo box) รับสีธีม ───────── */
+html[data-role-theme] .bg-brand-600,
+html[data-role-theme] .bg-brand-500,
+/* ───────── หัวแอป (logo box) รับสีธีม — เฉพาะกล่องโลโก้ใน header ───────── */
+html[data-role-theme] #screen-user header .bg-brand-600,
+html[data-role-theme] #screen-user header .rounded-2xl.bg-brand-600 {
+    background-color: var(--rt-primary) !important;
+}
+/* ป้องกันปุ่ม/ข้อความหาย: ปุ่มที่มีพื้นแบรนด์ + ข้อความขาว ต้องคงไว้ */
+html[data-role-theme] button.bg-brand-600,
+html[data-role-theme] .bg-brand-600.text-white {
+    background-color: #2563eb !important;
+    color: #fff !important;
+}
+html[data-role-theme] button.bg-brand-500 {
+    background-color: #3b82f6 !important; color: #fff !important;
+}
+
+/* ───────── แถบ Admin/Supervisor sidebar (พื้นเข้ม) รับโทนธีม ───────── */
+html[data-role-theme="admin"] #screen-admin > aside {
+    background-color: #f0f3ea !important;
+    color: #263f36 !important;
+}
+html[data-role-theme="supervisor"] #screen-supervisor > aside,
+html[data-role-theme="supervisor"] #screen-supervisor .bg-slate-900 {
+    background-color: #4c1d95 !important;
+}
+
+/* ───────── active tab สีธีม ───────── */
+html[data-role-theme] #screen-user .border-brand-600,
+html[data-role-theme] #screen-user .text-brand-600 {
+    border-color: var(--rt-primary) !important;
+}
+
+/* ───────── แถบแจ้งโหมด ───────── */
+:root { --role-banner-height: 34px; }
+
+/* The fixed role banner needs real layout space. Without this, it sits on top
+   of the application header and leaves its buttons visible only in fragments. */
+html[data-role-theme] body {
+    padding-top: var(--role-banner-height);
+}
+html[data-role-theme].summary-bar-visible body {
+    padding-top: calc(var(--role-banner-height) + 34px);
+}
+#role-theme-banner {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 235;
+    height: var(--role-banner-height);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; font-size: 13px; line-height: 1; font-weight: 700;
+    padding: 0 12px; color: #fff; letter-spacing: 0.2px;
+    background: var(--rt-primary, #1d4ed8);
+    box-shadow: 0 1px 0 rgba(15,23,42,0.12);
+}
+html:not([data-role-theme]) #role-theme-banner { display: none; }
+html[data-role-theme] #toast-container { top: calc(var(--role-banner-height) + 12px); }
+html[data-role-theme] #summary-bar { top: var(--role-banner-height) !important; }
+html[data-role-theme].summary-bar-visible #toast-container { top: calc(var(--role-banner-height) + 46px); }
+html[data-role-theme][data-intern="1"] #intern-mode-banner { display: none !important; }
+
+@media (max-width: 767px) {
+    :root { --role-banner-height: 30px; }
+    #role-theme-banner { font-size: 12px; }
+}
+
+/* ───────── QuickHub FAB — สีเดียวสะอาด ไม่มีอาร์คม่วงซ้อน ───────── */
+html[data-role-theme] #quick-hub-fab {
+    background: var(--rt-primary) !important;
+    background-image: none !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25) !important;
+    border: 3px solid #fff !important;
+}
+html[data-role-theme="intern"] #quick-hub-fab {
+    background: #fbbf24 !important;
+    box-shadow: 0 5px 0 #f59e0b !important;
+}
+html[data-role-theme] #quick-hub-menu > div:first-child,
+html[data-role-theme] #quick-hub-menu .hub-header {
+    background: var(--rt-primary) !important;
+    background-image: none !important;
+    color: #fff !important;
+}
+
+/* ───────── วอเตอร์มาร์กไอคอนมุมจอ ───────── */
+#role-theme-deco { position: fixed; pointer-events: none; z-index: 1; inset: 0; overflow: hidden; }
+html:not([data-role-theme]) #role-theme-deco { display: none; }
+#role-theme-deco i { position: absolute; opacity: 0.08; font-size: 90px; color: var(--rt-primary-d, #333); }
+
+/* ───────── QuickHub: กันปุ่มซ้อน/อาร์คสีหลุด (เด็ดขาด) ───────── */
+#quick-hub::before, #quick-hub::after,
+#quick-hub-fab::before, #quick-hub-fab::after { content: none !important; display: none !important; }
+#quick-hub { filter: none !important; }
+#quick-hub-fab {
+    background-image: none !important;
+    outline: none !important;
+}
+/* ปุ่มหลักให้เป็นวงกลมสีเดียวเสมอ ไม่ว่าจะ role ไหน (ฐาน) */
+#quick-hub-fab { background: #f59e0b; }

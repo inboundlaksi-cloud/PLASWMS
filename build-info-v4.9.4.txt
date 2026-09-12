@@ -1,0 +1,4 @@
+Product: PLAS WMS
+Version: 4.9.4-fzone-no-pin-bridge-fix
+Base: v4.9.3 All Accounts Bridge Fix
+Deploy target: borneoplas.netlify.app

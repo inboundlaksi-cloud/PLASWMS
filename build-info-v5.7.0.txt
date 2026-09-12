@@ -1,0 +1,9 @@
+PLAS WMS v5.7.0
+Build: Complete Print Workflow + Minimal TOPUP
+Date: 2026-08-04
+
+- Label print sessions and status confirmation
+- Reprint reason and audit log
+- Minimal TOPUP dashboard
+- A4 portrait TOPUP control sheet
+- Ink-saving matched TOPUP stickers

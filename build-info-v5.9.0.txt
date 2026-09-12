@@ -1,0 +1,7 @@
+Product: PLAS WMS
+Version: 5.9.0
+Feature: Academy Command Center, 3D ranks and external strike redemption workflow
+Build date: 2026-08-06
+Changed modules: academy-league.js, academy-league.css, index.html, sw.js, Academy rank assets
+Default external strike removal price: 50000 Reward Points
+Cache: plas-wms-v5.9.0-academy-command-center

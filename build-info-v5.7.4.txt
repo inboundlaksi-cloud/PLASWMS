@@ -1,0 +1,4 @@
+PLAS WMS v5.7.4
+- Label print auto-confirm enabled.
+- Receiving filters and bulk Written review enabled.
+- Service Worker cache: plas-wms-v5.7.4-auto-confirm-receiving-written

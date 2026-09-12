@@ -1,0 +1,18 @@
+PLAS WMS v5.13.5
+Build name: Receiving Print Ready
+Build date: 2026-08-10
+Node requirement: >=20
+Service worker cache: plas-wms-v5.13.5-receiving-print-ready
+
+Changed runtime files:
+- index.html
+- script.js
+- label-print-workflow.js
+- receiving-bulk-written.js
+- receiving-bulk-written.css
+- sw.js
+- package.json
+- package-lock.json
+
+Validation command:
+npm run check

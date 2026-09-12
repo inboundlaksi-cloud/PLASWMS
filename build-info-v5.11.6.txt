@@ -1,0 +1,15 @@
+PLAS WMS
+Version: 5.11.6
+Build date: 2026-08-07
+Release: AX Split Line Import Fix
+Cache: plas-wms-v5.11.6-ax-split-lines
+Package: PLASWMS-v5.11.6.zip
+
+Deployment:
+- Deploy the complete PLAS WMS bundle.
+- No Firebase schema migration is required.
+
+Recovery from v5.11.5:
+- Paste the same AX data again.
+- Existing rows are detected using their stored Item, Location and Quantity.
+- Only missing split rows are added.

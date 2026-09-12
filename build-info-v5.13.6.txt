@@ -1,0 +1,8 @@
+PLAS WMS v5.13.6
+Build: Top Location passive F-Zone guard + overlap-safe top navigation
+Release date: 2026-08-10
+Service worker cache: plas-wms-v5.13.6-toplocation-layout-safe
+
+Deploy target: Netlify production site for PLAS WMS
+Deploy method: Upload this extracted folder or this ZIP through Netlify Deploys
+

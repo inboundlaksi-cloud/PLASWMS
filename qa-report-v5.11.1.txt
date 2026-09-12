@@ -1,0 +1,25 @@
+PLAS WMS v5.11.1 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks
+PASS: HTML/local asset integrity
+PASS: 20 automated test suites via npm run check
+PASS: Print action changes labelPrintStatus to printed without changing item.status
+PASS: Written/Done records cannot be selected, printed or reprinted
+PASS: Receiving and Written pools remain separated
+PASS: One stable pairing code per item record, including duplicate ITEM codes
+PASS: Product name is drawn on NIIMBOT, TSC and A4/TSC labels
+PASS: Pairing code is reduced and anchored at the sticker corner
+PASS: Print operator, time, session, count and reprint reason are retained
+PASS: Existing Receiving, TOPUP, Academy, Supervisor and F-Zone regression suites
+PASS: Impeccable detector returned no UI anti-pattern warnings
+PASS: Desktop visual QA at 1440x900
+PASS: Mobile visual QA at 390x844
+PASS: Exactly two tabs rendered: Receiving and Written
+PASS: Written tab renders read-only cards and no print controls
+PASS: No horizontal overflow or browser console errors
+PASS: Mobile tab and primary touch targets at least 44px
+PASS: Label workflow text size at least 12px
+PASS: Actual 40x30 label canvas contains product name and corner pairing code
+
+Result: READY FOR USER ACCEPTANCE TESTING

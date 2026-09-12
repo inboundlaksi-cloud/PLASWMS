@@ -1,0 +1,7 @@
+PLAS WMS v5.11.7 — AX One Row One Item
+
+- ทุกแถวจาก AX สร้างเป็น 1 รายการใน PLAS
+- วาง 19 แถว พรีวิวและบันทึกครบ 19
+- ไม่ข้ามแถว แม้ Line, Item, LOC หรือข้อมูลอื่นเหมือนกัน
+- บันทึกด้วย Firestore batch และรายงานความสำเร็จตามจริง
+- Service worker cache: plas-wms-v5.11.7-ax-one-row-one-item

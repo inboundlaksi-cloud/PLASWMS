@@ -1,0 +1,13 @@
+PLAS WMS v5.13.4 — QA Report
+Date: 2026-08-10
+
+PASS: Closed QuickHub is removed from layout and hit testing
+PASS: Invisible QuickHub buttons cannot receive pointer input
+PASS: QuickHub open/closed state synchronizes hidden, inert and aria-hidden
+PASS: Product-label and TOPUP-sticker click-through guards remain active
+PASS: QuickHub CSS, script and Service Worker cache keys are v5.13.4
+PASS: JavaScript syntax validation
+PASS: Full npm run check regression suite
+PASS: Impeccable review completed; reported findings are unrelated legacy styling outside this interaction fix
+
+Result: ready for Netlify deployment and physical mobile smoke test.

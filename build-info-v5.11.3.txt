@@ -1,0 +1,12 @@
+PLAS WMS
+Version: 5.11.3
+Build date: 2026-08-06
+Release: Thai Standard Time / Correct Ranking
+Cache: plas-wms-v5.11.3-thai-time-ranking
+Package: PLASWMS-v5.11.3.zip
+
+Compatibility:
+- Internal Firestore fields and configuration keys named sla remain unchanged.
+- Only user-facing wording changes to plain Thai.
+- Existing Academy event IDs, EXP, points and rank data remain compatible.
+- Receiving/Written label printing behavior from v5.11.2 is preserved.

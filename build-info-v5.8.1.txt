@@ -1,0 +1,6 @@
+Product: PLAS WMS
+Version: 5.8.1
+Feature: Mobile Receiving workflow restoration and Academy card contrast
+Build date: 2026-08-06
+Changed modules: receiving-bulk-written.css, academy-league.css, role-themes.css
+Cache: plas-wms-v5.8.1-mobile-receiving-academy-card

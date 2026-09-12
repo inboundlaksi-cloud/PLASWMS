@@ -1,0 +1,13 @@
+PLAS WMS v5.11.7 — QA REPORT
+Date: 2026-08-07
+
+PASS: 19 copied AX rows preview as 19 items
+PASS: 19 copied AX rows remain 19 even when 10 matching records already exist
+PASS: Identical copied rows remain separate PLAS items
+PASS: Same Line No at multiple Locations remains complete
+PASS: Firestore batch write is used for confirmed imports
+PASS: Failed saves no longer report full success
+PASS: Existing PLAS 8-column import remains compatible
+PASS: Full automated regression suite via npm run check
+
+Result: READY FOR USER ACCEPTANCE TESTING

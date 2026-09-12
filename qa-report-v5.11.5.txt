@@ -1,0 +1,16 @@
+PLAS WMS v5.11.5 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks for ax-copy-import.js and script.js
+PASS: HTML/local asset integrity
+PASS: AX header-driven Copy/Paste parsing
+PASS: Multiple Warehouse and Purchase order rows in one paste
+PASS: External item number maps to main code; Item number maps to secondary code
+PASS: Qty Onhand falls back to InventQty when blank
+PASS: Extra and reordered AX columns are safely ignored
+PASS: Warehouse + PO + Line No duplicate protection
+PASS: Duplicate rows inside the same paste are skipped
+PASS: Existing PLAS 8-column Copy/Paste remains compatible
+PASS: Full automated regression suite via npm run check
+
+Result: READY FOR USER ACCEPTANCE TESTING

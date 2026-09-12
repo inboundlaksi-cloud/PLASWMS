@@ -1,0 +1,11 @@
+PLAS WMS v5.13.8
+Build: Firestore Confirm Safe
+
+แก้ไข:
+- ยืนยัน Written หลายรายการด้วย Firestore batch และรอผลบันทึกจริง
+- ยืนยันรับเข้าหลายรายการด้วย Firestore batch และรอผลบันทึกจริง
+- หากบันทึกล้มเหลว จะคืนสถานะเดิมและคงรายการที่เลือกไว้ให้ลองใหม่
+- ข้อความสำเร็จจะแสดงหลัง Firestore commit สำเร็จเท่านั้น
+- จัดคิว Academy awards ต่อพนักงาน ป้องกัน transaction ชนกัน
+
+Service worker cache: plas-wms-v5.13.8-firestore-confirm-safe

@@ -1,0 +1,21 @@
+PLAS WMS v5.13.6 — QA REPORT
+Date: 2026-08-10
+
+PASS npm run check
+- CSS production build completed
+- 24 automated regression suites passed
+- Top Location passive matching does not open a PIN prompt
+- Explicit F-Zone actions can still establish a PIN session
+- Role banner, summary bar, toast and workflow tabs have layout-safety assertions
+- Receiving, printing, QR pairing, AX copy import, Academy League and Supervisor regression suites passed
+
+PASS Impeccable UI post-fix scan
+- 0 findings in the changed UI and Top Location integration files
+
+Manual production check after Netlify deploy
+1. Login as employee
+2. Confirm the role banner does not cover the page header
+3. Open Top Up (เติมของ) and confirm no PIN prompt appears
+4. Click an explicit F-Zone action and confirm PIN appears only at that point
+5. Check desktop and mobile widths; tabs must scroll horizontally without covering content
+

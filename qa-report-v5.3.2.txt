@@ -1,0 +1,14 @@
+PLAS WMS v5.3.2 QA
+====================
+Scope: Mobile TOPUP compact header only
+
+PASS - Mobile TOPUP page title is a single compact row
+PASS - Duplicate mobile statistic cards are hidden (counts remain in tabs)
+PASS - Mobile tabs are one-row compact controls with count badges
+PASS - Mobile queue/history headers are compact
+PASS - Desktop TOPUP styles are unchanged
+PASS - TOPUP workflow, F-Zone completion recovery, bridge security and HTML assets remain valid
+PASS - All 11 Node regression tests pass
+PASS - JavaScript syntax checks pass
+
+No Firebase Rules, indexes, database records, Netlify Functions or TOPUP business logic changed.

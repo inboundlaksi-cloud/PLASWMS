@@ -1,0 +1,11 @@
+PLAS WMS
+Version: 5.11.0
+Build date: 2026-08-06
+Release: Label Pairing Scanner
+Cache: plas-wms-v5.11.0-label-pairing-scanner
+Package: PLASWMS-v5.11.0.zip
+
+Compatibility:
+- Preserves the existing external read-only QR URL.
+- Migrates v2 print sessions and audits into v3 history without treating old auto-confirm data as physically attached.
+- No backend contract or Firebase schema migration is required.

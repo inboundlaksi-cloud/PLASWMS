@@ -1,0 +1,23 @@
+PLAS WMS v5.11.3 — QA REPORT
+Date: 2026-08-06
+
+PASS: JavaScript syntax checks for academy-league.js and supervisor-operations.js
+PASS: HTML/local asset integrity
+PASS: 20 automated test suites via npm run check
+PASS: Employees without work start at Performance 0, Quality 0% and no false specialty
+PASS: Overall ranking sorts Performance descending
+PASS: Equal Performance scores sort by range EXP descending
+PASS: Equal Performance and EXP sort by Quality descending
+PASS: Remaining ties sort by work-event count, range Reward Points and Thai display name
+PASS: Employees without work show an em dash instead of a numbered position
+PASS: Employees without work do not appear on the Top 3 podium
+PASS: Academy table uses the Thai heading “คะแนนผลงาน ↓”
+PASS: Academy explains the ranking and tie-break rules beside the table title
+PASS: User-visible “SLA” labels are replaced by “เวลามาตรฐาน”, “เกินเวลา” or “เกินเวลาที่กำหนด”
+PASS: Standard-time settings, task details, queue, exception, profile, handover and CSV labels use plain Thai
+PASS: Internal sla field names remain intact for data compatibility
+PASS: Existing Receiving, TOPUP, print, Academy, Supervisor and F-Zone regression tests
+PASS: Responsive Academy grid rules reviewed at desktop, tablet and mobile breakpoints
+BLOCKED: Impeccable CLI could not be installed because network approval was denied by the execution environment
+
+Result: READY FOR USER ACCEPTANCE TESTING
